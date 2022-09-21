@@ -1,2 +1,4 @@
 **/main
 !**/main.cpp
+.vscode/
+add_problem.py
