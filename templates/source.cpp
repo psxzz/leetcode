@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 class Solution {
-   public:
+  public:
 };
 
 int main() {

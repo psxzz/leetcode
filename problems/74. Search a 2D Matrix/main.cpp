@@ -4,7 +4,7 @@ using std::vector;
 using matrix_t = vector<vector<int>>;
 
 class Solution {
-   public:
+  public:
     bool searchMatrix(matrix_t& matrix, int target) {
         int row = 0;
         while (row != matrix.size()) {
@@ -13,7 +13,8 @@ class Solution {
             if (matrix[row][row_size - 1] == target) return true;
 
             if (matrix[row][row_size - 1] > target)
-                return std::binary_search(matrix[row].begin(), matrix[row].end(), target);
+                return std::binary_search(matrix[row].begin(),
+                                          matrix[row].end(), target);
 
             row++;
         }
